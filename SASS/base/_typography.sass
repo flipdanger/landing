@@ -12,7 +12,7 @@ body
     &__main
         display: block
         font-weight: 800
-        font-size: 5rem
+        font-size: 3.5rem
         line-height: 6rem
         letter-spacing: 1rem
         text-transform: uppercase
@@ -22,6 +22,8 @@ body
         animation-delay: 1s
         animation-timing-function: ease
         backface-visibility: hidden
+        @include respond(tab-land)
+            font-size: 4rem
     &__secondary
         display: block
         font-weight: 100    
@@ -34,6 +36,8 @@ body
         animation-timing-function: ease
         backface-visibility: hidden
         margin-bottom: 6.5rem
+        @include respond(tab-land)
+            font-size: 3.6rem
 
 .title-secondary
     text-align: center
@@ -42,11 +46,13 @@ body
     letter-spacing: 1rem
     text-transform: uppercase
     font-weight: 800
-    background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%)
+    background: linear-gradient(90deg, rgba($color-purple-dark, 0.7) 0.03%, rgba($color-purple-dark, 0.7) 99.94%)
     -webkit-background-clip: text
     color: transparent
     transition: all .4s
     backface-visibility: hidden
+    @include respond(tab-land)
+        font-size: 3rem
     &:hover
         transform: skewY(2deg) skewX(15deg) scale(1.1)
         text-shadow: $shadow-h2
@@ -58,10 +64,17 @@ body
     letter-spacing: .2rem
     text-transform: uppercase
     font-weight: 700
+    @include respond(tab-land)
+        font-size: 1.8rem
 
 .paragraph
     font-size: $font-size-paragraph
     letter-spacing: .2rem
     line-height: 140%
     font-weight: 400
+    @include respond(tab-land)
+        font-size: 1.5rem
 
+.p-dev
+    text-decoration: none
+    text-align: center

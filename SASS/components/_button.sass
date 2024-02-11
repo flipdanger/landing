@@ -11,6 +11,8 @@
         position: relative
         font-size: 2rem
         border: none
+        @include respond(tab-land)
+            font-size: 1.8rem
         
     &:hover
         transform: translateY(-0.4rem)
@@ -39,8 +41,8 @@
 
 .btn_brown
     &, &:link, &:visited
-        background: $color-brown-dark
+        background: $color-purple-dark
         color: $color-white
     &:hover
     &::after
-        background: $color-brown-dark
+        background: $color-purple-dark
